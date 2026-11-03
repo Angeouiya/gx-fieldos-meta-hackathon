@@ -1,0 +1,40 @@
+{
+  "name": "gx",
+  "version": "0.1.0",
+  "private": true,
+  "description": "GX FieldOS web source review for the Meta Global AI Developer Hackathon.",
+  "packageManager": "pnpm@12.6.0",
+  "engines": {
+    "node": ">=24.0.0",
+    "pnpm": ">=12.0.0"
+  },
+  "scripts": {
+    "dev:web": "corepack pnpm --filter @gx/web dev",
+    "typecheck": "corepack pnpm -r --if-present typecheck",
+    "lint": "eslint . --max-warnings=0",
+    "test": "corepack pnpm test:contracts && corepack pnpm test:permissions && corepack pnpm test:core && corepack pnpm test:agrix-access && corepack pnpm test:ui && corepack pnpm test:provider && corepack pnpm test:chat && corepack pnpm test:work && corepack pnpm test:field && corepack pnpm test:transcribe",
+    "test:provider": "corepack pnpm --filter @gx/web test:provider",
+    "verify:meta-live": "node scripts/verify-meta-chat-live.mjs",
+    "verify:meta-work-live": "node scripts/verify-meta-work-live.mjs",
+    "test:contracts": "node --test packages/contracts/src/contracts.test.ts packages/contracts/src/work-metrics.test.ts",
+    "test:permissions": "node --test packages/permissions/src/permissions.test.ts",
+    "test:core": "corepack pnpm --filter @gx/core test",
+    "test:agrix-access": "node --test apps/web/lib/agrix-access.test.ts",
+    "test:ui": "corepack pnpm --filter @gx/ui test",
+    "test:chat": "corepack pnpm --filter @gx/web test:chat",
+    "test:work": "corepack pnpm --filter @gx/web test:work",
+    "test:field": "corepack pnpm --filter @gx/web test:field",
+    "test:transcribe": "node --test apps/web/app/api/transcribe/route.test.ts",
+    "build:web": "corepack pnpm --filter @gx/web build",
+    "build": "corepack pnpm build:web"
+  },
+  "devDependencies": {
+    "@eslint/js": "10.0.1",
+    "@types/node": "26.6.3",
+    "eslint": "10.11.0",
+    "eslint-plugin-react-hooks": "7.1.1",
+    "globals": "17.12.0",
+    "typescript": "5.9.3",
+    "typescript-eslint": "8.70.1"
+  }
+}

@@ -1,0 +1,12 @@
+.git
+.vercel
+**/node_modules
+**/.next
+**/target
+**/dist
+**/artifacts
+**/.env
+**/.env.*
+**/*.log
+apps/desktop
+scripts/fixtures

@@ -1,0 +1,12 @@
+packages:
+  - "apps/*"
+  - "packages/*"
+
+onlyBuiltDependencies:
+  - "@tauri-apps/cli"
+  - "esbuild"
+
+overrides:
+  image-size: "2.0.4"
+  sharp: "0.35.5"
+  source-map-js: "1.2.2"
