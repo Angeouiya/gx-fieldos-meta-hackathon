@@ -1,8 +1,9 @@
 # GX FieldOS: from field observations to an action plan
 
-**Source candidate for owner review, 3 November 2026.** This Web-only copy has
+**Open-source Web core for the Meta AI Developer Hackathon.** This Web-only copy has
 no upstream Git history, production database, local secrets, personal screen
-captures or desktop binaries. It has **not** been published or licensed yet.
+captures or desktop binaries. See the [MIT licence](LICENSE) and
+[source scope](SOURCE_SCOPE.md).
 Its production interface is [agrix.africa/gx](https://agrix.africa/gx).
 
 GX organizes a parcel into dated scan folders with up to four images each.
@@ -14,7 +15,7 @@ from estimates and checks that still require local measurement.
 ## Run a local Web demonstration
 
 Requirements: Node.js 24 or later and Corepack with pnpm 12.6.0. Clone this
-candidate, then create `apps/web/.env.local` with the following values:
+repository, then create `apps/web/.env.local` with the following values:
 
 ```dotenv
 GX_FIELD_DEMO_MODE=true
@@ -74,6 +75,4 @@ corepack pnpm build:web
 
 The local demonstration and its test data are illustrative. A passing build
 does not prove that the external AGRIX session, email and export services are
-available. Before a public GitHub submission, the owner must approve the code
-licence and the rights to redistribute the logo and sample imagery; see
-[public-release review](PUBLIC_RELEASE_REVIEW.md).
+available. The twenty generated example images from the video are excluded.
