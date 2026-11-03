@@ -2,6 +2,18 @@ packages:
   - "apps/*"
   - "packages/*"
 
+minimumReleaseAgeExclude:
+  - '@next/env@16.4.4'
+  - '@next/swc-darwin-arm64@16.4.4'
+  - '@next/swc-darwin-x64@16.4.4'
+  - '@next/swc-linux-arm64-gnu@16.4.4'
+  - '@next/swc-linux-arm64-musl@16.4.4'
+  - '@next/swc-linux-x64-gnu@16.4.4'
+  - '@next/swc-linux-x64-musl@16.4.4'
+  - '@next/swc-win32-arm64-msvc@16.4.4'
+  - '@next/swc-win32-x64-msvc@16.4.4'
+  - next@16.4.4
+
 onlyBuiltDependencies:
   - "@tauri-apps/cli"
   - "esbuild"
@@ -10,3 +22,5 @@ overrides:
   image-size: "2.0.4"
   sharp: "0.35.5"
   source-map-js: "1.2.2"
+  undici: "8.12.2"
+  zod: "4.6.6"

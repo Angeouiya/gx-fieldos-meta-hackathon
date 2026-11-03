@@ -23,8 +23,18 @@ No parcel area, soil chemistry, yield or return is established by an image.
 
 - Frozen-lockfile dependency installation passed.
 - Direct Web TypeScript check and ESLint passed.
-- 13 access/proxy tests and 17 FieldOS UI, farm and workbook tests passed.
-- Next.js production Web build passed.
+- 13 access/proxy tests, 18 FieldOS UI, farm and workbook tests, and 22
+  provider/chat/work route tests passed after the security update.
+- Next.js `16.4.4` production Web build passed after the security update.
+- The production-dependency audit of the original source found two critical,
+  six high and six moderate advisories. The security update pins Next.js
+  `16.4.4` and resolves OpenAI's optional `undici` and `zod` peers to `8.12.2`
+  and `4.6.6`. The refreshed lockfile audit reports **zero critical and zero
+  high** advisories. Two moderate ExcelJS transitive advisories remain:
+  `GHSA-w5hq-g745-h8pq` (`uuid@8.3.2`) and `GHSA-g3hv-75wg-m249`
+  (`minimatch@3.1.5`/`5.1.9`). Their patched versions are major upgrades
+  outside ExcelJS's declared dependency ranges; they were not forced without
+  compatibility evidence.
 - On the original long Windows workspace path, the pnpm task runner failed to
   write its own task state before invoking TypeScript. Direct TypeScript checks
   passed. The full test suite was not run for this isolated release.

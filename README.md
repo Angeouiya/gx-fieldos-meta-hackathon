@@ -5,6 +5,7 @@ no upstream Git history, production database, local secrets, personal screen
 captures or desktop binaries. See the [MIT licence](LICENSE) and
 [source scope](SOURCE_SCOPE.md).
 Its production interface is [agrix.africa/gx](https://agrix.africa/gx).
+Watch the [2:45 GX FieldOS demonstration](https://angeouiya.github.io/gx-fieldos-meta-hackathon/).
 
 GX organizes a parcel into dated scan folders with up to four images each.
 The user can compare observations across a project, review an AI-assisted plan,
