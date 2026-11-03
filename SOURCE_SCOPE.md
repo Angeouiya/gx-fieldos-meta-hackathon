@@ -10,8 +10,8 @@ The local demo supports scan folders with up to four images, replayed example
 responses or a live Meta call with a user-provided key, reviewable plans, farm
 records, client-side business plan PDF/DOCX and Excel exports, and a local
 evidence-led technical guide PDF/DOCX. It does not reproduce AGRIX accounts,
-persistent cloud storage, collaborator invitation email, or the full production
-guide with verified local sources. Replay is disabled in
+persistent cloud storage, collaborator invitation email, or the full AGRIX
+production guide and its source-check workflow. Replay is disabled in
 production builds. The [AGRIX GX Web app](https://agrix.africa/gx) uses those
 separate services when signed in.
 
@@ -26,7 +26,8 @@ No parcel area, soil chemistry, yield or return is established by an image.
 - Direct Web TypeScript check and ESLint passed.
 - 13 access/proxy tests, 18 FieldOS UI, farm and workbook tests, and 22
   provider/chat/work route tests passed after the security update.
-- Next.js `16.4.4` production Web build passed after the security update.
+- Three local-guide tests, Web/UI TypeScript checks and the Next.js `16.4.4`
+  production Web build passed again after integrating the guide.
 - The production-dependency audit of the original source found two critical,
   six high and six moderate advisories. The security update pins Next.js
   `16.4.4` and resolves OpenAI's optional `undici` and `zod` peers to `8.12.2`
