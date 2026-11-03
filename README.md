@@ -60,9 +60,9 @@ in production builds. No SAM segmentation is claimed.
 
 The local Meta scan route requests JSON, parses it and normalizes fields before
 display; the replay path returns saved illustrative findings. The production
-AGRIX backend, including its database schema, is outside this candidate. See
-[`docs/FIELDOS_HACKATHON.md`](docs/FIELDOS_HACKATHON.md) for development history
-and the integration boundary.
+AGRIX backend, including its database schema, is outside this repository. See
+[`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) for the connected and local
+architecture.
 
 ## Verify the source
 

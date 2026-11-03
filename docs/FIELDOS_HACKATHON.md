@@ -1,5 +1,9 @@
 # GX FieldOS — parcours vérifiable pour le hackathon Meta
 
+> Notes historiques du développement. Pour le périmètre publié et son état
+> vérifié au 3 novembre 2026, voir [l'architecture](ARCHITECTURE.md) et
+> [le périmètre source](../SOURCE_SCOPE.md).
+
 ## Périmètre et provenance
 
 Ce dépôt `GX` contient l'application autonome Web/Desktop. Les fonctions GX Scan,
