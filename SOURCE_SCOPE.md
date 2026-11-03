@@ -8,9 +8,10 @@ included.
 
 The local demo supports scan folders with up to four images, replayed example
 responses or a live Meta call with a user-provided key, reviewable plans, farm
-records and client-side business plan PDF/DOCX and Excel exports. It does not
-reproduce AGRIX accounts, persistent cloud storage, collaborator invitation
-email, or the complete production technical guide. Replay is disabled in
+records, client-side business plan PDF/DOCX and Excel exports, and a local
+evidence-led technical guide PDF/DOCX. It does not reproduce AGRIX accounts,
+persistent cloud storage, collaborator invitation email, or the full production
+guide with verified local sources. Replay is disabled in
 production builds. The [AGRIX GX Web app](https://agrix.africa/gx) uses those
 separate services when signed in.
 

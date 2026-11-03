@@ -41,8 +41,11 @@ or otherwise authorized images during testing. An ordinary photo cannot measure
 parcel area, soil chemistry or likely yields.
 
 The local demo includes client-side business plan PDF/DOCX and Excel workbook
-creation. Its complete technical-guide route and collaborator email invitations
-depend on the separate AGRIX service and are **not reproduced by this clone**.
+creation. It also generates an evidence-led technical guide in PDF/DOCX, using
+only the locally saved project, scan, plan, task and budget data. Its procedures
+remain illustrative until checked against local measurements and sources.
+Collaborator email invitations depend on the separate AGRIX service and are
+**not reproduced by this clone**.
 The production account, persistent scans, roles, private files and server
 exports also depend on that service. The local replay is intentionally disabled
 in production builds. No SAM segmentation is claimed.
@@ -55,6 +58,7 @@ in production builds. No SAM segmentation is claimed.
 | `packages/ui/src/pages/FieldOSPlan.tsx` | Reviewable plan interface. |
 | `packages/ui/src/pages/FieldOSFarm.tsx` | Follow-up, budget and local-replay business documents. |
 | `apps/web/lib/field-demo.ts` | Local-only state, multi-view uploads and replay or live Meta scan requests. |
+| `apps/web/lib/field-demo-guide.ts` | Evidence-led local technical guide in the selected language. |
 | `apps/web/lib/model-provider.ts` | Server-side Meta/OpenAI provider and model selection. |
 | `apps/web/app/api/chat` and `apps/web/app/api/work` | Chat and multimodal work routes; model keys stay server-side. |
 | `apps/web/lib/field-proxy.ts` | Restricted proxy to AGRIX projects, scans and exports in the connected deployment. |

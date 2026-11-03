@@ -1,4 +1,4 @@
-import { cleanGXControl } from './gx-document-context'
+import { cleanGXControl } from './gx-document-context.ts'
 
 export type GXExportFormat = 'pdf' | 'docx' | 'pptx' | 'xlsx' | 'txt'
 

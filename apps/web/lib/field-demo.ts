@@ -3,7 +3,9 @@ import { randomUUID } from "node:crypto";
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import { join } from "node:path";
 import { replayPlanResult, replayScanResult } from "./field-demo-replay.ts";
+import { buildLocalTechnicalGuide } from "./field-demo-guide.ts";
 import { parcelArea, type ParcelPoint } from "../../../packages/ui/src/parcel-geometry.ts";
+import { createGXDocumentBlob } from "../../../packages/ui/src/documents/gx-document-export.ts";
 
 type Project = { id: string; title: string; description: string; country: string; domain: string; role: "owner"; archivedAt: string | null; pinnedAt: string | null; areaSqMeters: number | null; areaMethod: string | null; areaAccuracyMeters: number | null; boundary: { type: "Polygon"; coordinates: ParcelPoint[][] } | null; counts: { missions: number; measurements: number; plans: number } };
 type Evidence = { id: string; viewIndex: number };
@@ -291,6 +293,21 @@ export async function handleLocalFieldDemo(request: Request, parts: string[]): P
       farm.records[index] = { ...(body.data as FarmRecord), id: str(body.id) };
     } else return error("Unsupported farm operation.");
     state.farms[id] = farm; await save(state); return json({ ok: true });
+  }
+  if (root === "projects" && id && action === "technical-guide" && method === "GET") {
+    const query = new URL(request.url).searchParams;
+    const format = query.get("format");
+    const language = query.get("lang") ?? "en";
+    if (format !== "pdf" && format !== "docx") return error("Technical guide format must be pdf or docx.", 400);
+    if (language !== "en" && language !== "fr") return error("Technical guide language must be en or fr.", 400);
+    const guide = buildLocalTechnicalGuide(detail, state.farms[id], language);
+    const blob = await createGXDocumentBlob(guide.title, guide.content, format);
+    return new Response(blob, { headers: {
+      "Content-Type": format === "pdf" ? "application/pdf" : "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+      "Content-Disposition": `attachment; filename="gx-technical-guide-${id}.${format}"`,
+      "Content-Language": language,
+      "Cache-Control": "no-store",
+    } });
   }
   if (root === "projects" && id && action === "export" && method === "GET") return json(detail);
   return error("Local demo route unavailable.", 404);

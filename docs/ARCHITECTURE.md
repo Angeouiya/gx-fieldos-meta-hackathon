@@ -31,12 +31,13 @@ reviewer can create five folders of four images and inspect a saved example
 analysis without an account or API key. Set `GX_FIELD_DEMO_REPLAY=false`,
 `GX_MODEL_PROVIDER=meta` and `MODEL_API_KEY` in an ignored local env file to
 exercise a real Meta request. The same UI can create a draft plan, record farm
-operations, and generate English PDF/DOCX business documents and an Excel
-workbook on the client. Replay output and illustrative figures are not live
+operations, generate English PDF/DOCX business documents and an Excel workbook
+on the client, and download a locally assembled technical guide in English or
+French. Replay output and illustrative figures are not live
 agronomic or market evidence.
 
-The local path does not include cloud accounts, email invitations, the complete
-technical-guide export or the AGRIX database. Its replay route rejects
+The local path does not include cloud accounts, email invitations, the full
+production guide with verified local sources or the AGRIX database. Its replay route rejects
 production deployments. The public code can therefore demonstrate the GX
 Web/Meta implementation while the production service remains separately
 operated. No SAM 3.1 integration is claimed.
@@ -48,6 +49,7 @@ operated. No SAM 3.1 integration is claimed.
 - `packages/ui/src/pages/FieldOSPlan.tsx`: plan review.
 - `packages/ui/src/pages/FieldOSFarm.tsx`: farm operations and local exports.
 - `apps/web/lib/field-demo.ts`: development-only API and Meta/replay path.
+- `apps/web/lib/field-demo-guide.ts`: local technical guide assembled from saved project evidence.
 - `apps/web/lib/model-provider.ts`: model configuration and server requests.
 - `apps/web/lib/field-proxy.ts`: restricted AGRIX forwarding.
 
