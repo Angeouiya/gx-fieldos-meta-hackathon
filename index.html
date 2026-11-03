@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102e1f">
+  <meta name="description" content="Watch the 2-minute-45-second GX FieldOS demonstration for the Meta Global AI Developer Hackathon.">
+  <title>GX FieldOS | Meta AI demo</title>
+  <style>
+    :root { color-scheme: light; font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, sans-serif; background: #f6f7ef; color: #102e1f; }
+    * { box-sizing: border-box; }
+    body { margin: 0; }
+    a { color: inherit; text-underline-offset: .2em; }
+    .wrap { max-width: 1180px; padding: 0 28px; margin: 0 auto; }
+    header { border-bottom: 1px solid #d7dfd0; }
+    header .wrap { min-height: 78px; display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+    .brand { display: inline-flex; align-items: center; gap: 10px; font-weight: 800; letter-spacing: -.03em; font-size: 20px; text-decoration: none; }
+    .badge { display: inline-grid; place-items: center; width: 37px; height: 37px; border-radius: 9px; background: #075d38; color: white; font-size: 16px; }
+    .source { font-size: 14px; font-weight: 650; }
+    main { padding: 64px 0 70px; }
+    .eyebrow { color: #26724b; text-transform: uppercase; letter-spacing: .13em; font-size: 12px; font-weight: 800; }
+    h1 { max-width: 850px; font-size: clamp(36px, 6vw, 64px); line-height: 1.04; letter-spacing: -.055em; margin: 16px 0 20px; }
+    .lede { max-width: 770px; color: #4b5f50; font-size: clamp(16px, 2vw, 20px); line-height: 1.55; margin: 0 0 34px; }
+    .player { background: #102e1f; border: 10px solid #102e1f; border-radius: 22px; box-shadow: 0 26px 70px #19382428; overflow: hidden; }
+    video { display: block; width: 100%; aspect-ratio: 16 / 9; background: #102e1f; }
+    .caption { color: #536456; font-size: 14px; line-height: 1.5; margin: 18px 0 0; }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 48px; }
+    .step { border: 1px solid #d8e0d2; background: #fff; border-radius: 16px; padding: 24px; }
+    .step strong { display: block; margin-bottom: 8px; font-size: 18px; }
+    .step p { margin: 0; color: #55675a; line-height: 1.5; }
+    footer { border-top: 1px solid #d7dfd0; padding: 25px 0 40px; color: #536456; font-size: 13px; line-height: 1.5; }
+    @media (max-width: 680px) { .wrap { padding: 0 16px; } header .wrap { min-height: 66px; } main { padding-top: 40px; } .steps { grid-template-columns: 1fr; margin-top: 32px; } .player { border-width: 5px; border-radius: 12px; } }
+  </style>
+</head>
+<body>
+  <header><div class="wrap"><a class="brand" href="https://agrix.africa/gx"><span class="badge" aria-hidden="true">GX</span> FieldOS</a><a class="source" href="https://github.com/Angeouiya/gx-fieldos-meta-hackathon">Explore the source ↗</a></div></header>
+  <main class="wrap">
+    <div class="eyebrow">Meta Global AI Developer Hackathon · Startup track</div>
+    <h1>From field observations to a plan teams can act on.</h1>
+    <p class="lede">GX FieldOS brings smartphone observations, Meta-powered image analysis, field follow-up and practical project documents into one reviewable workflow.</p>
+    <div class="player"><video controls playsinline preload="metadata" poster="poster.jpg" aria-label="GX FieldOS demonstration, 2 minutes 45 seconds"><source src="gx-fieldos-demo.mp4" type="video/mp4"><track kind="subtitles" src="captions.en.vtt" srclang="en" label="English" default>Your browser does not support video playback. <a href="gx-fieldos-demo.mp4">Download the MP4</a>.</video></div>
+    <p class="caption">2 min 45 sec · English narration and subtitles · <a href="gx-fieldos-demo.mp4" download>Download the video</a></p>
+    <section class="steps" aria-label="Demonstration chapters">
+      <div class="step"><strong>Five scan folders</strong><p>Four different views per folder connect site, soil, plants, water and field edge to one project.</p></div>
+      <div class="step"><strong>Traceable analysis</strong><p>Meta Model API turns images and notes into observations, hypotheses and checks tied to source views.</p></div>
+      <div class="step"><strong>Action and tracking</strong><p>A reviewable plan leads into farm operations, budget scenarios and downloadable project files.</p></div>
+    </section>
+  </main>
+  <footer><div class="wrap">Demonstration images and budget values are illustrative. Parcel area, soil chemistry and crop suitability require field measurement and local verification. Narration is synthetic. <a href="https://agrix.africa/gx">Open GX</a>.</div></footer>
+</body>
+</html>

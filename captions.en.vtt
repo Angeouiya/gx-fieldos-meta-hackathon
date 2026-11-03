@@ -1,0 +1,174 @@
+WEBVTT
+
+00:00.000 --> 00:01.728
+From above, a field is a shape.
+
+00:01.948 --> 00:05.873
+On the ground, it becomes decisions
+about soil, plants and water.
+
+00:06.093 --> 00:09.027
+GX FieldOS keeps those
+observations together, so
+
+00:09.027 --> 00:11.960
+each can inform the next field task.
+
+00:12.000 --> 00:15.125
+For this Abidjan example,
+the owner declares two
+
+00:15.125 --> 00:18.251
+point five hectares and saves a GPS point.
+
+00:18.471 --> 00:21.628
+Neither an image nor one
+coordinate proves the area.
+
+00:21.920 --> 00:23.925
+A later walk can refine the boundary.
+
+00:26.000 --> 00:28.432
+We create five folders
+with four views each.
+
+00:28.652 --> 00:31.991
+Twenty example images stay
+grouped by site, soil,
+
+00:31.991 --> 00:35.329
+plants, water and field
+edge, with their context.
+
+00:35.549 --> 00:38.280
+The team can revisit the
+original views later.
+
+00:38.550 --> 00:41.654
+Each folder follows one
+subject through four views,
+
+00:41.654 --> 00:44.758
+giving the model context
+beyond a single close-up.
+
+00:47.350 --> 00:50.411
+That lets the team compare
+site, soil, plants,
+
+00:50.411 --> 00:53.473
+water and field edge without
+mixing their evidence.
+
+00:53.720 --> 00:55.256
+The five sets stay distinct.
+
+00:57.000 --> 01:00.072
+The Meta Model API examines all five sets.
+
+01:00.292 --> 01:04.335
+GX reports five analyzed scans
+and keeps observations beside
+
+01:04.335 --> 01:08.377
+source images, so the team
+can trace each suggestion.
+
+01:08.550 --> 01:10.587
+The boundary result points back to its
+
+01:10.587 --> 01:12.625
+source views, ready for a field check.
+
+01:12.870 --> 01:15.025
+This points the team to
+the next field checks.
+
+01:17.000 --> 01:18.664
+A clue can guide a site visit.
+
+01:18.884 --> 01:21.295
+It cannot measure soil chemistry, confirm
+
+01:21.295 --> 01:23.705
+a disease cause or guarantee harvest.
+
+01:23.925 --> 01:25.888
+Field checks come before investment.
+
+01:26.100 --> 01:28.489
+The owner decides what to verify first.
+
+01:29.000 --> 01:32.709
+The results feed a
+versioned plan draft: site
+
+01:32.709 --> 01:35.955
+assessment, preparation, planting,
+maintenance, harvest and sale.
+
+01:36.175 --> 01:38.436
+The owner reviews it before field work.
+
+01:38.650 --> 01:42.981
+New field evidence can prompt a revision
+while preserving the earlier plan.
+
+01:45.000 --> 01:49.096
+The budget links nine planned
+operations to dates, costs and sales.
+
+01:49.316 --> 01:53.060
+Conservative, base and favorable
+scenarios test illustrative
+
+01:53.060 --> 01:56.804
+inputs, never guaranteed
+market prices or returns.
+
+01:57.024 --> 02:00.672
+Actual entries can replace
+estimates as work progresses.
+
+02:03.000 --> 02:07.907
+GX downloads the business plan as
+Word and PDF, then the Excel tracker.
+
+02:08.127 --> 02:11.881
+Their excerpts show planned
+operations, cash flow and
+
+02:11.881 --> 02:15.167
+scenarios, with illustrative
+assumptions visible for review.
+
+02:15.400 --> 02:18.244
+The tracker separates plans
+from actuals, ready for
+
+02:18.244 --> 02:20.733
+costs and sales recorded in the field.
+
+02:20.900 --> 02:23.609
+Actuals can be recorded
+as the work proceeds.
+
+02:24.000 --> 02:28.288
+GX then downloads the technical
+guide as PDF and Word.
+
+02:28.508 --> 02:32.229
+Its labeled excerpts show
+equipment, materials, procedures and
+
+02:32.229 --> 02:35.484
+field controls drawn
+from the exported files.
+
+02:35.650 --> 02:38.743
+The guide gives the team a
+checklist for the next site visit.
+
+02:41.000 --> 02:43.709
+GX links field evidence
+to action and budget.
